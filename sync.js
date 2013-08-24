@@ -32,7 +32,7 @@ replications.on('done', function() {
     }
     Pouch(bellServer + 'actions').post(action, function(err, response) {
       console.log('Sync has been logged. Going for shutdown')
-      //exec('shutdown -p now')
+      exec('poweroff')
     })
   })
 })
